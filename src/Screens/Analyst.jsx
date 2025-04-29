@@ -1,8 +1,11 @@
 import React from 'react'
+import Admin from '../Components/Admin'
+import "./Analyst.css"
 
 const Analyst = () => {
   return (
     <>
+    <Admin/>
      <div class="main-content">
     
         <div class="header">

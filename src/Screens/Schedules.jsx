@@ -1,12 +1,14 @@
 import React from 'react'
 
 import "./Schedules.css"
+import Admin from '../Components/Admin'
 
 
 
 const Schedules = () => {
   return (
     <>
+    <Admin/>
      <div className="main-content">
         
         <div className="header">

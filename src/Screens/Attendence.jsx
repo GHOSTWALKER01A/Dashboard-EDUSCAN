@@ -1,12 +1,14 @@
 import React from 'react'
 
 import "./Attendence.css"
+import Admin from '../Components/Admin'
 
 
 
 const Attendence = () => {
   return (
     <>
+    <Admin/>
     <div class="main-content">
         <div class="header">
             <h1>Attendance Records</h1>

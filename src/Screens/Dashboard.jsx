@@ -1,17 +1,19 @@
 import React,{Usestate} from 'react'
 
 import "./Dashboard.css"
+import Admin from '../Components/Admin'
 
 const Dashboard = () => {
   return (
     <>
+    <Admin/>
     <div className="main-content">
         <div className="header">
             <h1>Dashboard Overview</h1>
             <div className="user-info">Admin:<b>RoY</b></div>
         </div>
 
-        <div class="dashboard-grid">
+        <div className="dashboard-grid">
             <div className="card">
                 <h3>Total Students</h3>
                 <p>250</p>

@@ -22,13 +22,13 @@ const Admin = () => {
      <div className="sidebar">
         <div className="logo">EduScan</div>
         <ul>
-            <li><a href="dashboard.jsx">Dashboard</a></li>
-            <li><Link to="./Attendence">Attendance</Link></li>
-            <li><a href="schedules.html">Schedules</a></li>
-            <li><a href="Managment.html">Managment</a></li>
-            <li><a href="users.html">Users</a></li>
-            <li><a href="analytics.html">Analytics</a></li>
-            <li><a href="settings.html">Settings</a></li>
+            <li><Link to="/">Dashboard</Link></li>
+            <li><Link to="./attendence">Attendance</Link></li>
+            <li> <Link to="./schedules">Schedules</Link></li>
+            <li><Link to="./management">Managment</Link></li>
+            <li><Link to="./users">Users</Link></li>
+            <li><Link to="./analytics">Analytics</Link></li>
+            <li><Link>Settings</Link></li>
         </ul>
         <button className="theme-toggle" onClick={Toggletheme}>{Lighttheme ? 'Switch to Night' : 'Switch to Light'}</button>
     </div>
