@@ -1,0 +1,217 @@
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--accent);
+}
+.header .user-info {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+.section {
+    margin-bottom: 40px;
+}
+.section h2 {
+    font-size: 24px;
+    color: var(--accent);
+    margin: 0 0 20px;
+}
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow);
+}
+/* Management Panels */
+.management-panel {
+    margin-bottom: 20px;
+}
+.panel-header {
+    background: var(--bg-secondary);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+.panel-header:hover {
+    background: var(--accent);
+}
+.panel-header h3 {
+    font-size: 18px;
+    color: var(--text-primary);
+    margin: 0;
+}
+.panel-header .toggle-icon {
+    font-size: 20px;
+    color: var(--text-secondary);
+}
+.panel-content {
+    display: none;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 0 0 8px 8px;
+}
+.panel-content.active {
+    display: block;
+}
+/* Academic Materials & Previous Year Papers */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.resource-item {
+    background: var(--bg-secondary);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.resource-item:hover {
+    transform: translateY(-5px);
+}
+.resource-item p {
+    font-size: 16px;
+    color: var(--text-primary);
+    margin: 10px 0;
+}
+.resource-item a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+}
+.resource-item a:hover {
+    text-decoration: underline;
+}
+/* Leave Applications */
+.leave-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.leave-table th, .leave-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--text-secondary);
+}
+.leave-table th {
+    background: var(--bg-secondary);
+    color: var(--accent);
+}
+.leave-table td {
+    color: var(--text-secondary);
+}
+.leave-table a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 10px;
+}
+.leave-table a:hover {
+    text-decoration: underline;
+}
+/* Doubt Section */
+.doubt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.doubt-table th, .doubt-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--text-secondary);
+}
+.doubt-table th {
+    background: var(--bg-secondary);
+    color: var(--accent);
+}
+.doubt-table td {
+    color: var(--text-secondary);
+}
+.doubt-table a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 10px;
+}
+.doubt-table a:hover {
+    text-decoration: underline;
+}
+/* Events Handling */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.event-card {
+    background: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.event-card:hover {
+    transform: translateY(-5px);
+}
+.event-card h4 {
+    font-size: 20px;
+    color: var(--accent);
+    margin: 0 0 10px;
+}
+.event-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 5px 0;
+}
+.action-button {
+    padding: 10px 20px;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+.action-button:hover {
+    background: #FFFFFF;
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 768px) {
+   
+    .main-content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+    .resources-grid,
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+    .leave-table,
+    .doubt-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+@media (max-width: 576px) {
+    
+    .main-content {
+        margin-left: 0;
+    }
+    .theme-toggle {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
